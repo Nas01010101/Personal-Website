@@ -339,6 +339,10 @@ a:hover {
     background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
 }
 
+.project-placeholder.finance {
+    background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+}
+
 .placeholder-icon {
     filter: grayscale(20%);
 }
