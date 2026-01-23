@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anas El-Ghoudane - Certifications, Cours & Ateliers.">
+    <title>Certifications & Cours | Anas El-Ghoudane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Page-specific styles */
+        .page-header {
+            padding-top: 120px;
+            padding-bottom: var(--space-lg);
+            text-align: center;
+            background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-sm);
+        }
+
+        .course-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .course-item {
+            background: var(--color-bg-alt);
+            border: 1px solid var(--color-border);
+            padding: var(--space-md);
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--color-text);
+            transition: all var(--transition-fast);
+        }
+
+        .course-item:hover {
+            border-color: var(--color-accent);
+            transform: translateY(-2px);
+        }
+
+        .workshop-card {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: var(--space-lg);
+            margin-bottom: var(--space-md);
+        }
+
+        .workshop-title {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-xs);
+        }
+
+        .workshop-meta {
+            font-size: 0.9rem;
+            color: var(--color-accent);
+            margin-bottom: var(--space-sm);
+            font-weight: 500;
+        }
+
+        .workshop-description {
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">AE</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="certifications.html" style="color: var(--color-text);">Certifications & Cours</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="../certifications.html" class="lang-switch">EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Certifications & Apprentissage</h1>
+            <p class="section-subtitle">Une collection de mes cours universitaires, certifications professionnelles et
+                ateliers.</p>
+        </div>
+    </header>
+
+    <!-- Certifications Section -->
+    <section class="section certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Spécialisation Machine Learning</h3>
+                        <p class="cert-org">DeepLearning.AI (Coursera)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TTLO61QO4H30"
+                            target="_blank" rel="noopener noreferrer" class="cert-link">Voir le certificat →</a>
+                    </div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon">⚙️</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">GenAI Engineering for Production (MLOps)</h3>
+                        <p class="cert-org">DeepLearning.AI (Coursera)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/7FSZLFI3QGPK" target="_blank"
+                            rel="noopener noreferrer" class="cert-link">Voir le certificat →</a>
+                    </div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🦜</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">RAG avec LangChain</h3>
+                        <p class="cert-org">DataCamp</p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/2b97298316167132924ac652a9da6f0fc7368f9e?raw=1"
+                            target="_blank" rel="noopener noreferrer" class="cert-link">Voir le certificat →</a>
+                    </div>
+                </div>
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🛰️</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Fondamentaux de la télédétection</h3>
+                        <p class="cert-org">NASA ARSET</p>
+                        <a href="../assets/images/nasa_cert.png" target="_blank" rel="noopener noreferrer"
+                            class="cert-link">Voir le certificat →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Coursework Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Cours Universitaires Pertinents</h2>
+            <ul class="course-list">
+                <li class="course-item">Structures de Données</li>
+                <li class="course-item">Algèbre Linéaire</li>
+                <li class="course-item">Analyse Réelle 1</li>
+                <li class="course-item">Probabilités Avancées</li>
+                <li class="course-item">Calcul à Plusieurs Variables</li>
+                <li class="course-item">Calcul Vectoriel</li>
+                <li class="course-item">Équations Différentielles</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section class="section" style="background-color: var(--color-bg-alt);">
+        <div class="container">
+            <h2 class="section-title">Ateliers & Événements</h2>
+
+            <div class="workshop-card">
+                <h3 class="workshop-title">5e Atelier de Génération Spatiale d'Amérique du Nord et Centrale (NCAC-SGW)
+                </h3>
+                <p class="workshop-meta">Agence spatiale canadienne (ASC) · Saint-Hubert, QC</p>
+                <div class="workshop-description">
+                    <p>
+                        Un atelier régional intensif de deux jours visant à nourrir la perspective de la prochaine
+                        génération sur les questions spatiales et scientifiques.
+                        Participation à des sessions plénières, des conférences et des groupes de travail axés sur
+                        l'industrie spatiale internationale, échanges avec des experts du milieu universitaire, des
+                        entreprises et des agences spatiales.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Anas El-Ghoudane. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
