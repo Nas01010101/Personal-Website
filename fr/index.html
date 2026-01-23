@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Anas Elghoudane - Étudiant en mathématiques et informatique à l'Université de Montréal. Portfolio présentant des projets en ML et robotique.">
-    <title>Anas Elghoudane | Portfolio</title>
+        content="Anas El-Ghoudane - Étudiant en mathématiques et informatique à l'Université de Montréal. Portfolio présentant des projets en ML et robotique.">
+    <title>Anas El-Ghoudane | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,7 +32,7 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <h1 class="hero-name">Anas Elghoudane</h1>
+            <h1 class="hero-name">Anas El-Ghoudane</h1>
             <p class="hero-tagline">B.Sc. Mathématiques & Informatique</p>
             <p class="hero-affiliation">Université de Montréal</p>
             <p class="hero-roles">Président, DIROBOTS · Vice-Président, UdeM IA</p>
@@ -77,6 +77,58 @@
             <p class="section-subtitle">Cliquez sur un projet pour accéder à la démo interactive</p>
 
             <div class="projects-grid">
+                <!-- Project 3: MuJoCo BC -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder robotics">
+                            <span class="placeholder-icon">🤖</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Robotique / RL</span>
+                        <h3 class="project-title">MuJoCo Pick-and-Place</h3>
+                        <p class="project-description">
+                            Pipeline de clonage comportemental de bout en bout pour la manipulation robotique.
+                            Un robot apprend à saisir et placer des objets en imitant des démonstrations expertes.
+                        </p>
+                        <div class="project-tech">
+                            <span>MuJoCo</span>
+                            <span>PyTorch</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="https://mujoco-simulator-pick-and-place-ntxqosggg2xqkheo94qdui.streamlit.app"
+                            class="project-link" target="_blank" rel="noopener noreferrer">
+                            Lancer la démo →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2: RoboPaper -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder research">
+                            <span class="placeholder-icon">📄</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">NLP / RAG</span>
+                        <h3 class="project-title">RoboPaper</h3>
+                        <p class="project-description">
+                            Un système de génération augmentée par récupération pour la recherche en robotique.
+                            Indexe plus de 75 articles arXiv et synthétise des réponses basées sur des preuves.
+                        </p>
+                        <div class="project-tech">
+                            <span>LangChain</span>
+                            <span>ChromaDB</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <a href="https://robopaper.streamlit.app/" class="project-link" target="_blank"
+                            rel="noopener noreferrer">
+                            Lancer la démo →
+                        </a>
+                    </div>
+                </article>
+
                 <!-- Project 0: Insurance Fraud Analyser -->
                 <article class="project-card">
                     <div class="project-image">
@@ -129,58 +181,55 @@
                         </a>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
 
-                <!-- Project 2: RoboPaper -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder research">
-                            <span class="placeholder-icon">📄</span>
-                        </div>
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Spécialisation Machine Learning</h3>
+                        <p class="cert-org">DeepLearning.AI (Coursera)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TTLO61QO4H30"
+                            target="_blank" rel="noopener noreferrer" class="cert-link">Voir le certificat →</a>
                     </div>
-                    <div class="project-content">
-                        <span class="project-category">NLP / RAG</span>
-                        <h3 class="project-title">RoboPaper</h3>
-                        <p class="project-description">
-                            Un système de génération augmentée par récupération pour la recherche en robotique.
-                            Indexe plus de 75 articles arXiv et synthétise des réponses basées sur des preuves.
-                        </p>
-                        <div class="project-tech">
-                            <span>LangChain</span>
-                            <span>ChromaDB</span>
-                            <span>Streamlit</span>
-                        </div>
-                        <a href="https://robopaper.streamlit.app/" class="project-link" target="_blank"
-                            rel="noopener noreferrer">
-                            Lancer la démo →
-                        </a>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon">⚙️</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">GenAI Engineering for Production (MLOps)</h3>
+                        <p class="cert-org">DeepLearning.AI (Coursera)</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/7FSZLFI3QGPK" target="_blank"
+                            rel="noopener noreferrer" class="cert-link">Voir le certificat →</a>
                     </div>
-                </article>
-
-                <!-- Project 3: MuJoCo BC -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder robotics">
-                            <span class="placeholder-icon">🤖</span>
-                        </div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🦜</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">RAG avec LangChain</h3>
+                        <p class="cert-org">DataCamp</p>
+                        <a href="https://www.datacamp.com/statement-of-accomplishment/course/2b97298316167132924ac652a9da6f0fc7368f9e?raw=1"
+                            target="_blank" rel="noopener noreferrer" class="cert-link">Voir le certificat →</a>
                     </div>
-                    <div class="project-content">
-                        <span class="project-category">Robotique / RL</span>
-                        <h3 class="project-title">MuJoCo Pick-and-Place</h3>
-                        <p class="project-description">
-                            Pipeline de clonage comportemental de bout en bout pour la manipulation robotique.
-                            Un robot apprend à saisir et placer des objets en imitant des démonstrations expertes.
-                        </p>
-                        <div class="project-tech">
-                            <span>MuJoCo</span>
-                            <span>PyTorch</span>
-                            <span>Python</span>
-                        </div>
-                        <a href="https://mujoco-simulator-pick-and-place-ntxqosggg2xqkheo94qdui.streamlit.app"
-                            class="project-link" target="_blank" rel="noopener noreferrer">
-                            Lancer la démo →
-                        </a>
+                </div>
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🛰️</div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Fondamentaux de la télédétection</h3>
+                        <p class="cert-org">NASA ARSET</p>
+                        <a href="../assets/images/nasa_cert.png" target="_blank" rel="noopener noreferrer"
+                            class="cert-link">Voir le certificat →</a>
                     </div>
-                </article>
+                </div>
             </div>
         </div>
     </section>
@@ -201,7 +250,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2024 Anas Elghoudane. Tous droits réservés.</p>
+            <p>© 2024 Anas El-Ghoudane. Tous droits réservés.</p>
         </div>
     </footer>
 
