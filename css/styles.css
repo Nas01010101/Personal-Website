@@ -3,15 +3,16 @@
    ======================================== */
 
 :root {
-    /* Colors - Academic White Theme */
+    /* Colors - Sober Academic Theme */
     --color-bg: #ffffff;
-    --color-bg-alt: #f8f9fa;
-    --color-text: #1a1a2e;
-    --color-text-muted: #6b7280;
-    --color-accent: #2563eb;
-    --color-accent-hover: #1d4ed8;
-    --color-border: #e5e7eb;
-    --color-border-dark: #d1d5db;
+    --color-bg-alt: #f4f4f5;
+    --color-text: #18181b;
+    --color-text-muted: #52525b;
+    --color-accent: #0f172a;
+    /* Slate 900 - much darker, almost black/navy */
+    --color-accent-hover: #334155;
+    --color-border: #e4e4e7;
+    --color-border-dark: #d4d4d8;
 
     /* Typography */
     --font-serif: 'Crimson Pro', Georgia, serif;
@@ -188,7 +189,8 @@ a:hover {
     text-align: center;
     padding-top: 80px;
     padding-bottom: var(--space-lg);
-    background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .hero-content {
@@ -328,23 +330,33 @@ a:hover {
 }
 
 .project-placeholder.exoplanet {
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    background-color: #f4f4f5;
+    color: #0f172a;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .project-placeholder.research {
-    background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%);
+    background-color: #f4f4f5;
+    color: #0f172a;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .project-placeholder.robotics {
-    background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+    background-color: #f4f4f5;
+    color: #0f172a;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .project-placeholder.finance {
-    background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+    background-color: #f4f4f5;
+    color: #0f172a;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .placeholder-icon {
-    filter: grayscale(20%);
+    opacity: 0.7;
+    font-size: 2.5rem;
+    /* Slightly smaller */
 }
 
 .project-content {
@@ -447,6 +459,50 @@ a:hover {
 .footer p {
     font-size: 0.85rem;
     color: var(--color-text-muted);
+}
+
+/* ========================================
+   Teaching Section
+   ======================================== */
+
+.teaching {
+    background-color: var(--color-bg-alt);
+}
+
+.lectures-content {
+    max-width: 800px;
+}
+
+.lecture-item {
+    margin-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-lg);
+}
+
+.lecture-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.lecture-title {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+    font-family: var(--font-sans);
+    /* Use sans-serif for rigorous look */
+}
+
+.lecture-context {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+}
+
+.lecture-description {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
 }
 
 /* ========================================
