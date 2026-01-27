@@ -89,21 +89,10 @@ a:hover {
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: var(--space-lg);
     color: var(--color-text);
-    position: relative;
-    display: inline-block;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background-color: var(--color-accent);
+    font-weight: 600;
 }
 
 .section-subtitle {
@@ -300,63 +289,17 @@ a:hover {
 .project-card {
     background: var(--color-bg);
     border: 1px solid var(--color-border);
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
-    transition: all var(--transition-normal);
+    transition: border-color var(--transition-fast);
 }
 
 .project-card:hover {
     border-color: var(--color-border-dark);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transform: translateY(-2px);
-}
-
-.project-card.in-progress {
-    opacity: 0.85;
 }
 
 .project-image {
-    height: 160px;
-    overflow: hidden;
-}
-
-.project-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-}
-
-.project-placeholder.exoplanet {
-    background-color: #f4f4f5;
-    color: #0f172a;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.project-placeholder.research {
-    background-color: #f4f4f5;
-    color: #0f172a;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.project-placeholder.robotics {
-    background-color: #f4f4f5;
-    color: #0f172a;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.project-placeholder.finance {
-    background-color: #f4f4f5;
-    color: #0f172a;
-    border-bottom: 1px solid var(--color-border);
-}
-
-.placeholder-icon {
-    opacity: 0.7;
-    font-size: 2.5rem;
-    /* Slightly smaller */
+    display: none;
 }
 
 .project-content {
