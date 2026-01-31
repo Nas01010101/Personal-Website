@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Diapositives et matériel de cours pour les conférences en Apprentissage Automatique et Robotique à UdeM IA.">
+    <title>Cours | Anas El-Ghoudane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">AE</a>
+            <ul class="nav-links">
+                <li><a href="../fr/index.html#about">À propos</a></li>
+                <li><a href="../fr/index.html#projects">Projets Récents</a></li>
+                <li><a href="lectures.html" style="color: var(--color-text);">Conférences</a></li>
+                <li><a href="certifications.html">Certifications & Cours</a></li>
+                <li><a href="../fr/index.html#contact">Contact</a></li>
+                <li><a href="../lectures.html" class="lang-switch">EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container lectures-container">
+
+        <!-- Sidebar: Course & Lecture Selection -->
+        <aside class="lectures-sidebar">
+
+            <div class="course-group">
+                <div class="course-group-title">Intro à l'Apprentissage Automatique</div>
+                <!-- Active Lecture -->
+                <button class="lecture-btn active" data-pdf-en="../assets/slides/intro_ml_slides_en.pdf"
+                    data-pdf-fr="../assets/slides/intro_ml_slides_fr.pdf" data-title="Cours 1: Introduction & Bases">
+                    Cours 1: Intro
+                </button>
+                <!-- Future Lectures -->
+                <button class="lecture-btn disabled">Cours 2 (À venir)</button>
+                <button class="lecture-btn disabled">Cours 3 (À venir)</button>
+            </div>
+
+            <div class="course-group">
+                <div class="course-group-title">Intro à la Robotique Autonome</div>
+                <!-- Active Lecture -->
+                <button class="lecture-btn" data-pdf-en="../assets/slides/intro_robotics_slides_en.pdf"
+                    data-pdf-fr="../assets/slides/intro_robotics_slides_fr.pdf"
+                    data-title="Cours 0: Fondamentaux Robotique">
+                    Cours 0: Fondamentaux
+                </button>
+                <!-- Future Lectures -->
+                <button class="lecture-btn disabled">Cours 1 (À venir)</button>
+                <button class="lecture-btn disabled">Cours 2 (À venir)</button>
+            </div>
+
+            <div
+                style="margin-top: var(--space-lg); font-size: 0.8rem; color: var(--color-text-muted); font-style: italic;">
+                Matériel personnellement créé et présenté par moi pour des conférences de clubs étudiants à l'Université
+                de Montréal.
+                Le contenu est sujet à des mises à jour périodiques.
+            </div>
+
+        </aside>
+
+        <!-- Main Area: Preview -->
+        <main class="preview-area">
+
+            <div class="preview-header">
+                <h1 class="preview-title" id="preview-title">Cours 1: Introduction & Bases</h1>
+                <div class="preview-actions">
+                    <a href="../assets/slides/intro_ml_slides_en.pdf" class="action-btn" id="download-en"
+                        download>Télécharger EN</a>
+                    <a href="../assets/slides/intro_ml_slides_fr.pdf" class="action-btn" id="download-fr"
+                        download>Télécharger FR</a>
+                </div>
+            </div>
+
+            <!-- PDF Viewer -->
+            <iframe src="../assets/slides/intro_ml_slides_fr.pdf" class="pdf-frame" id="slide-preview"
+                title="Aperçu des diapositives">
+                <p>Votre navigateur ne supporte pas l'affichage PDF. Veuillez télécharger le fichier pour le voir.</p>
+            </iframe>
+
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Anas El-Ghoudane. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/lectures.js"></script>
+</body>
+
+</html>
