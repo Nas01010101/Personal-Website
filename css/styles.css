@@ -448,6 +448,20 @@ a:hover {
     line-height: 1.6;
 }
 
+.lecture-links {
+    margin-top: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.copyright-notice {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
 /* ========================================
    Certifications Section
    ======================================== */
