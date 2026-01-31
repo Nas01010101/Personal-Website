@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function initLectureSelector() {
     const outputFrame = document.getElementById('slide-preview');
     const titleDisplay = document.getElementById('preview-title');
-    const downloadEnInfo = document.getElementById('download-en');
-    const downloadFrInfo = document.getElementById('download-fr');
 
     // Select all lecture buttons
     const lectureButtons = document.querySelectorAll('.lecture-btn');
@@ -39,10 +37,6 @@ function initLectureSelector() {
 
             outputFrame.src = defaultPdf;
             titleDisplay.textContent = title;
-
-            // Update Download Links
-            downloadEnInfo.href = pdfEn;
-            downloadFrInfo.href = pdfFr;
         });
     });
 }

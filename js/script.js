@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add scroll-based nav styling
     initNavScroll();
+
+    // Init scroll animations
+    initScrollAnimations();
 });
 
 /**
@@ -99,5 +102,33 @@ function initNavScroll() {
         } else {
             nav.style.boxShadow = 'none';
         }
+    });
+}
+
+/**
+ * Scroll Animations using IntersectionObserver
+ */
+function initScrollAnimations() {
+    const observerOptions = {
+        root: null, // viewport
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger when 10% of element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    // Target elements to animate
+    // We select sections, cards, and items
+    const targets = document.querySelectorAll('.section, .project-card, .lecture-item, .cert-card, .workshop-card');
+    targets.forEach(target => {
+        target.classList.add('fade-in-section');
+        observer.observe(target);
     });
 }
