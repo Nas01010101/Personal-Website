@@ -15,8 +15,8 @@
     --color-border-dark: #d4d4d8;
 
     /* Typography */
-    --font-serif: 'Georgia', 'Times New Roman', serif;
-    --font-sans: 'Arial', Helvetica, sans-serif;
+    --font-serif: 'Crimson Pro', 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Inter', 'Arial', Helvetica, sans-serif;
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -779,7 +779,20 @@ a:hover {
 @media (max-width: 768px) {
     .lectures-container {
         grid-template-columns: 1fr;
-        padding-top: 100px;
+        padding-top: 180px;
+    }
+
+    .lectures-sidebar {
+        position: static;
+        width: 100%;
+        max-height: 250px;
+        overflow-y: auto;
+        margin-bottom: var(--space-md);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .pdf-frame {
+        height: 60vh;
     }
 }
 
