@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Activités de club incluant cours, présentations d'articles et projets pour UdeM AI et DIROBOTS.">
+    <title>Enseignement & Leadership | Anas El-Ghoudane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .materials-container {
+            padding-top: 120px;
+            padding-bottom: var(--space-xl);
+        }
+
+        .course-section {
+            margin-bottom: var(--space-2xl);
+            padding-bottom: var(--space-lg);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .course-section:last-child {
+            border-bottom: none;
+        }
+
+        .course-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-xs);
+        }
+
+        .course-meta {
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-md);
+        }
+
+        .course-description {
+            max-width: 700px;
+            margin-bottom: var(--space-md);
+        }
+
+        .materials-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+        }
+
+        .materials-table th {
+            text-align: left;
+            padding: var(--space-sm);
+            border-bottom: 2px solid var(--color-text);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .materials-table td {
+            padding: var(--space-sm);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .materials-table tr:hover td {
+            background-color: var(--color-bg-alt);
+        }
+
+        .coming-soon {
+            color: var(--color-text-muted);
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">AE</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#projects">Projets</a></li>
+                <li><a href="index.html#club-activities" style="color: var(--color-text);">Enseignement & Leadership</a>
+                </li>
+                <li><a href="certifications.html">Certifications & Cours</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="../club-activities.html" class="lang-switch">EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container materials-container">
+
+        <!-- UdeM AI Section -->
+        <div class="course-section">
+            <h2 class="course-title">UdeM AI — Introduction à l'Apprentissage Automatique</h2>
+            <p class="course-meta">Hiver 2026 · Club étudiant UdeM AI</p>
+            <p class="course-description">
+                Une introduction complète à l'apprentissage automatique couvrant l'apprentissage supervisé,
+                l'optimisation et les réseaux de neurones.
+            </p>
+            <p class="course-description">
+                Toutes les diapositives sont disponibles sur la page
+                <a href="https://www.udemai.ca/fr/presentations" target="_blank" rel="noopener noreferrer">Présentations
+                    UdeM AI</a>.
+            </p>
+        </div>
+
+        <!-- DIROBOTS Section -->
+        <div class="course-section">
+            <h2 class="course-title">DIROBOTS — Introduction à la Robotique Autonome</h2>
+            <p class="course-meta">Hiver 2026 · DIROBOTS</p>
+            <p class="course-description">
+                Introduction pratique à la robotique axée sur la cinématique, le contrôle et la simulation avec MuJoCo.
+            </p>
+            <p class="course-description">
+                Toutes les diapositives sont disponibles sur la page
+                <a href="https://www.dirobot.ca/fr/presentations" target="_blank"
+                    rel="noopener noreferrer">Présentations DIROBOTS</a>.
+            </p>
+        </div>
+
+        <!-- Vision2Grab Section -->
+        <div class="course-section">
+            <h2 class="course-title">DIROBOTS — Projet Vision2Grab</h2>
+            <p class="course-meta">Manipulation Robotique basée sur le ML</p>
+            <p class="course-description">
+                Un projet de robotique en cours appliquant l'apprentissage automatique aux tâches de manipulation
+                robotique.
+            </p>
+            <p><a href="https://github.com/Nas01010101/Vision2Grab" target="_blank" rel="noopener noreferrer">[Dépôt
+                    GitHub]</a></p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Anas El-Ghoudane. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
